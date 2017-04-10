@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+    /* Remove the navbar's default margin-bottom and rounded borders */ 
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+    
+    /* Add a gray background color and some padding to the footer */
+    footer {
+      background-color: #f2f2f2;
+      padding: 25px;
+    }
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#timeline">Timeline</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#intro">Introduction</a></li>
+        <li><a href="#timeline">Timeline</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="jumbotron" id="intro">
+  <div class="container text-center">
+    <h1>Introduction To The Timeline Project</h1>      
+    <p>This is a timeline of the verious empires, dynasties, and civilizations that were present between 1000 BCE and 1700 CE in Europe, China, and Africa.</p>
+  </div>
+</div>
+<div id="timeline">
+<iframe src='https://cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=19atM5U9MXkdrEU9gK03WKUipef9qJa_gy4OcrthFKKA&font=Default&lang=en&initial_zoom=2&height=1000' width='100%' height='1000' webkitallowfullscreen mozallowfullscreen allowfullscreen frameborder='0'></iframe>
+</div> 
+
+<footer class="container-fluid text-center">
+  <p>This timeline was created by Louis Carrico-Braun with assistence from knightlab.com.</p>
+</footer>
+
+</body>
+</html>
